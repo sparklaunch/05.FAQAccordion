@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Card from "./components/Card.svelte";
 </script>
 
 <svelte:head>
@@ -9,4 +10,17 @@
         rel="stylesheet"
     />
 </svelte:head>
-<div id="app" />
+<div id="app">
+    <Card />
+</div>
+
+<style>
+    #app {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgb(166, 93, 231), rgb(90, 88, 229));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
