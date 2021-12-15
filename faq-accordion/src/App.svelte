@@ -3,24 +3,30 @@
     interface FAQ {
         title: string;
         content?: string;
+        isActive: boolean;
     }
     const faqs: FAQ[] = [
         {
             title: "How many team members can I invite?",
+            isActive: false,
         },
         {
             title: "What is the maximum file upload size?",
             content:
                 "No more than 2GB. All files in your account must fit your allotted storage space.",
+            isActive: true,
         },
         {
             title: "How do I reset my password?",
+            isActive: false,
         },
         {
             title: "Can I cancel my subscription?",
+            isActive: false,
         },
         {
             title: "Do you provide additional support?",
+            isActive: false,
         },
     ];
 </script>
