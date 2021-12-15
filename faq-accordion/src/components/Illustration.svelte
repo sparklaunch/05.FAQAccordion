@@ -3,7 +3,7 @@
         src="/assets/illustration-woman-online-desktop.svg"
         alt="Illustration"
     />
-    <img src="/assets/illustration-box-desktop.svg" alt="Box" />
+    <img src="/assets/bg-pattern-desktop.svg" alt="Background Pattern" />
 </div>
 
 <style>
@@ -14,13 +14,15 @@
         position: absolute;
         width: 100%;
         height: auto;
-        left: -30px;
+        top: 25vh;
+        left: 10vh;
+        transform: translate(-50%, -50%);
     }
     #illustration > img:last-child {
         position: absolute;
-        width: 40%;
-        height: auto;
-        top: 100px;
-        left: -30px;
+        width: 100%;
+        top: 30vh;
+        left: 10vh;
+        transform: translate(-50%, -50%);
     }
 </style>
