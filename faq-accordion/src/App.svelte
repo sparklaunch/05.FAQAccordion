@@ -1,5 +1,28 @@
 <script lang="ts">
     import Card from "./components/Card.svelte";
+    interface FAQ {
+        title: string;
+        content?: string;
+    }
+    const faqs: FAQ[] = [
+        {
+            title: "How many team members can I invite?",
+        },
+        {
+            title: "What is the maximum file upload size?",
+            content:
+                "No more than 2GB. All files in your account must fit your allotted storage space.",
+        },
+        {
+            title: "How do I reset my password?",
+        },
+        {
+            title: "Can I cancel my subscription?",
+        },
+        {
+            title: "Do you provide additional support?",
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -11,7 +34,7 @@
     />
 </svelte:head>
 <div id="app">
-    <Card />
+    <Card data={faqs} />
 </div>
 
 <style>

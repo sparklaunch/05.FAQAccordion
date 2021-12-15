@@ -7,12 +7,20 @@
 </div>
 
 <style>
+    #illustration {
+        position: relative;
+    }
     #illustration > img:first-child {
+        position: absolute;
         width: 100%;
         height: auto;
+        left: -30px;
     }
     #illustration > img:last-child {
-        width: 100%;
+        position: absolute;
+        width: 40%;
         height: auto;
+        top: 100px;
+        left: -30px;
     }
 </style>

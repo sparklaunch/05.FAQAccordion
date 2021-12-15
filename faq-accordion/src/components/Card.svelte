@@ -1,6 +1,7 @@
 <script lang="ts">
     import Illustration from "./Illustration.svelte";
     import FAQ from "./FAQ.svelte";
+    export let data;
 </script>
 
 <div id="card">
@@ -8,7 +9,7 @@
         <Illustration />
     </div>
     <div id="right">
-        <FAQ />
+        <FAQ {data} />
     </div>
 </div>
 
