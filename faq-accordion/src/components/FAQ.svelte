@@ -21,4 +21,14 @@
         margin-bottom: 30px;
         color: rgb(30, 28, 49);
     }
+    @media screen and (max-width: 1440px) {
+        #faq {
+            padding: 30px;
+            margin-top: 100px;
+        }
+        #faq > h1 {
+            text-align: center;
+            font-size: 36px;
+        }
+    }
 </style>

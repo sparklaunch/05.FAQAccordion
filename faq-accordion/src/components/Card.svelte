@@ -40,4 +40,22 @@
     #right {
         width: 50%;
     }
+    @media screen and (max-width: 1440px) {
+        #card {
+            flex-direction: column;
+            width: 90%;
+            height: 700px;
+            overflow: visible;
+            margin: auto;
+        }
+        #left {
+            width: 100%;
+        }
+        #right {
+            width: 100%;
+        }
+        #card-wrapper > img {
+            display: none;
+        }
+    }
 </style>
