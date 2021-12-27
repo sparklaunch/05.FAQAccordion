@@ -8,26 +8,26 @@
     const faqs: FAQ[] = [
         {
             title: "How many team members can I invite?",
-            isActive: false,
+            isActive: false
         },
         {
             title: "What is the maximum file upload size?",
             content:
                 "No more than 2GB. All files in your account must fit your allotted storage space.",
-            isActive: true,
+            isActive: true
         },
         {
             title: "How do I reset my password?",
-            isActive: false,
+            isActive: false
         },
         {
             title: "Can I cancel my subscription?",
-            isActive: false,
+            isActive: false
         },
         {
             title: "Do you provide additional support?",
-            isActive: false,
-        },
+            isActive: false
+        }
     ];
 </script>
 
@@ -39,18 +39,24 @@
         rel="stylesheet"
     />
 </svelte:head>
-<div id="app">
+<main>
     <Card data={faqs} />
-</div>
+</main>
 
 <style>
-    #app {
+    main {
         width: 100vw;
         height: 100vh;
-        background: linear-gradient(rgb(166, 93, 231), rgb(90, 88, 229));
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+    }
+    @media all and (max-width: 1440px) {
+        main {
+            height: auto;
+            width: 100%;
+            padding: 150px 0 50px 0;
+        }
     }
 </style>

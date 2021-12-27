@@ -5,3 +5,10 @@
     font-family: "Kumbh Sans", sans-serif;
     transition: ease all 0.5s;
 }
+html,
+body {
+    min-height: 100%;
+}
+body {
+    background: linear-gradient(rgb(166, 93, 231), rgb(90, 88, 229));
+}
